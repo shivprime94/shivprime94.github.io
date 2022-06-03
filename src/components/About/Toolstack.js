@@ -1,33 +1,43 @@
-import React from "react";
-import { Col, Row } from "react-bootstrap";
+import React from 'react'
+import { Col, Row } from 'react-bootstrap'
 import {
   SiLinux,
   SiVisualstudiocode,
   SiPostman,
   SiHeroku,
   SiVercel,
-} from "react-icons/si";
-
+} from 'react-icons/si'
+import Zoom from 'react-reveal/Zoom'
 function Toolstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiLinux />
+    <Row style={{ justifyContent: 'center', paddingBottom: '50px' }}>
+      <Col xs={4} md={2} className='tech-icons'>
+        <Zoom bottom>
+          <SiLinux />
+        </Zoom>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+      <Col xs={4} md={2} className='tech-icons'>
+        <Zoom bottom>
+          <SiVisualstudiocode />
+        </Zoom>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+      <Col xs={4} md={2} className='tech-icons'>
+        <Zoom bottom>
+          <SiPostman />
+        </Zoom>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
+      <Col xs={4} md={2} className='tech-icons'>
+        <Zoom bottom>
+          <SiVercel />
+        </Zoom>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiHeroku />
+      <Col xs={4} md={2} className='tech-icons'>
+        <Zoom bottom>
+          <SiHeroku />
+        </Zoom>
       </Col>
     </Row>
-  );
+  )
 }
 
-export default Toolstack;
+export default Toolstack

@@ -1,10 +1,11 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import homeLogo from '../../Assets/home-main.svg'
+// import homeLogo from '../../Assets/home-main.svg'
 import Particle from '../Particle'
 import Home2 from './Home2'
 import Type from './Type'
-
+const homeLogo =
+  'https://cdn.dribbble.com/users/2131993/screenshots/4948736/thoughtworks-gif_dribbble.gif'
 function Home() {
   return (
     <section>

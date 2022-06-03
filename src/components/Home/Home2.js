@@ -4,6 +4,7 @@ import myImg from '../../Assets/avatar.svg'
 import Tilt from 'react-parallax-tilt'
 import { AiFillGithub, AiOutlineTwitter, AiFillInstagram } from 'react-icons/ai'
 import { FaLinkedinIn } from 'react-icons/fa'
+import Fade from 'react-reveal/Fade'
 
 function Home2() {
   return (
@@ -11,36 +12,44 @@ function Home2() {
       <Container>
         <Row>
           <Col md={8} className='home-about-description'>
-            <h1 style={{ fontSize: '2.6em' }}>
-              LET ME <span className='purple'> INTRODUCE </span> MYSELF
-            </h1>
-            <p className='home-about-body'>
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <b className='purple'> C++, Javascript and Python. </b>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <b className='purple'>Web Technologies and Products </b> and also
-              in areas related to &nbsp;
-              <b className='purple'>
-                Deep Learning and Natural Launguage Processing.
-              </b>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className='purple'>Node.js</b> and
-              <b className='purple'>Modern Javascript Library and Frameworks</b>
-              &nbsp; like
-              <b className='purple'> React.js and Next.js</b>
-            </p>
+            <Fade bottom>
+              <h1 style={{ fontSize: '2.6em' }}>
+                LET ME <span className='purple'> INTRODUCE </span> MYSELF
+              </h1>
+            </Fade>
+            <Fade bottom>
+              <p className='home-about-body'>
+                I fell in love with programming and I have at least learnt
+                something, I think… 🤷‍♂️
+                <br />
+                <br />I am fluent in classics like
+                <b className='purple'> C++, Javascript and Python. </b>
+                <br />
+                <br />
+                My field of Interest's are building new &nbsp;
+                <b className='purple'>Web Technologies and Products </b> and
+                also in areas related to &nbsp;
+                <b className='purple'>
+                  Deep Learning and Natural Launguage Processing.
+                </b>
+                <br />
+                <br />
+                Whenever possible, I also apply my passion for developing
+                products with <b className='purple'>Node.js</b> and
+                <b className='purple'>
+                  Modern Javascript Library and Frameworks
+                </b>
+                &nbsp; like
+                <b className='purple'> React.js and Next.js</b>
+              </p>
+            </Fade>
           </Col>
           <Col md={4} className='myAvtar'>
-            <Tilt>
-              <img src={myImg} className='img-fluid' alt='avatar' />
-            </Tilt>
+            <Fade bottom>
+              <Tilt>
+                <img src={myImg} className='img-fluid' alt='avatar' />
+              </Tilt>
+            </Fade>
           </Col>
         </Row>
         <Row>
